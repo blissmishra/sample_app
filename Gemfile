@@ -5,9 +5,6 @@ gem 'rails', '3.2.1'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem "SystemTimer", :require => "system_timer", :platforms => :ruby_18
-gem "rack-timeout"
-
 #gem 'sqlite3', '1.3.6', :group => :development
 
 gem 'pg', :group => :development
