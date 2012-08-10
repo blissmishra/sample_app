@@ -67,6 +67,7 @@ GEM
       rack
     rack-test (0.6.1)
       rack (>= 1.0)
+    rack-timeout (0.0.3)
     rails (3.2.1)
       actionmailer (= 3.2.1)
       actionpack (= 3.2.1)
@@ -135,10 +136,12 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  SystemTimer
   autotest (= 4.4.6)
   coffee-rails (~> 3.2.1)
   jquery-rails
   pg
+  rack-timeout
   rails (= 3.2.1)
   rspec-rails (= 2.6.1)
   sass-rails (~> 3.2.3)
