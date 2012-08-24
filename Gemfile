@@ -6,6 +6,7 @@ gem 'rails', '3.2.1'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3', '1.3.6', :group => :development
+gem 'gravatar_image_tag', '1.0.0.pre2'
 
 #gem 'pg', :group => :development
 
@@ -19,6 +20,7 @@ group :test do
 	gem 'webrat', '0.7.1'
 	gem 'spork', '0.9.0.rc8'
 	gem 'autotest', '4.4.6'
+	gem 'factory_girl_rails', '1.0'
 end
 
 

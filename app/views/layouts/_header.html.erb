@@ -1,17 +1,27 @@
-<header>
-	<% logo = image_tag("logo.png", :alt => "Sample App", :class => "round") %>
-	<%= link_to logo, root_path %>
-	<nav class="round">
-		<ul>
-			<li>
-				<%= link_to "Home", root_path %>
-			</li>
-			<li>
-				<%= link_to "Help", help_path %>
-			</li>
-			<li>
-				<%= link_to "Sign in", "#" %>
-			</li>
-		</ul>
-	</nav>
-</header>
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> 
+				<span class="icon-bar"></span> 
+				<span class="icon-bar"></span> 
+				<span class="icon-bar"></span> 
+			</a>
+			<!--% logo = image_tag("logo.png", :alt => "HourGlass") %-->
+			<%= link_to "HourGlass", root_path, :class=> "logo" %>
+
+			<div class="nav-collapse pull-right">
+				<ul class="nav">
+					<li>
+						<%= link_to "Home", root_path %>
+					</li>
+					<li>
+						<%= link_to "Help", help_path %>
+					</li>
+					<li>
+						<%= link_to "Sign in", "#" %>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
