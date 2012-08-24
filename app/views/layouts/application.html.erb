@@ -12,6 +12,12 @@
 		
 			<%= render 'layouts/header'%>
 			<div class="container container-fluid">
+				<% flash.each do |key, value| %>
+					<div class="alert alert-success <%= key %>">
+						<button type="button" class="close" data-dismiss="alert">×</button>
+						<%= value %>
+					</div>
+				<% end %>
 				<%= yield %>
 			</div>
 				<%= render 'layouts/footer'%>

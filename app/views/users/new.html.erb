@@ -1,2 +1,17 @@
 <h1>Sign Up</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+
+<%= form_for(@user) do |f| %>
+<%= render 'shared/error_messages' %>
+	<%= f.label :name %>
+	<%= f.text_field :name, :class=>'input-large' %>
+	<%= f.label :email %>
+	<%= f.text_field :email, :class=>'input-large' %>
+	<%= f.label :password %>
+	<%= f.password_field :password, :class=>'input-large' %>
+	<%= f.label :password_confirmation, "Confirmation" %>
+	<%= f.password_field :password_confirmation, :class=>'input-large' %>
+	<div>
+	<%= f.submit "Sign up",:class =>'btn btn-primary' %>	
+	</div>
+<% end %>
+
